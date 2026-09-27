@@ -1,0 +1,52 @@
+<html>
+</head>
+    <title> моя первая страница</title>
+    <style>
+        body {
+            background-color: #eef2f3;
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        ul {
+            list-style-position: inside;
+            padding: 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db
+            color: white;
+            text-decoratin: none;
+            border-radius: 5px;
+            margin-top: 15px 0;
+        }
+        img {
+            border-radius: 10px;
+            margin-top: 15px;
+        }       
+    </style>
+</head>
+<body> 
+    <h1>привет,мир!</h1>
+    <p>Это мой первый абзац.</p>
+    <a href="https://www.wikipedia.org" class="btn">перейти в Википедию</a>
+
+    <p>Это вторая абзац на моей странице,</p>
+
+    <ul>
+       <li>первый пункт списка</li>
+       <li>второй пункт списка</li>
+    </ul> 
+
+    <img src="https://picsum.photos/300/200" alt="Случайная картинка "> 
+    
+    <form style="margin-top: 30px;">
+        <label for="username"> как тебя зовут?</label><br><br>
+        <input type="text" id="username" placeholder="Введи имя..." style="padding: 8px; border-radius: 5px; border: 1px solid #ccc;><br><br>
+        <button type="button" class="btn" onclick="alert('привет, ' + document.getElementById('username').value + '!')">Отправить</button>
+    </form>    
+</body> 
+</html>
